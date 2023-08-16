@@ -25,7 +25,7 @@
     margin-left: 10px;
 }
 .toDoApp h2{
-    color: #002700;
+    color: #f1f7f1;
     display: flex;
     align-items: center;
     margin-bottom: 25px;
@@ -52,20 +52,29 @@ input{
 button{
     border: none;
     outline: none;
-    padding: 20px 55px;
+    padding: 20px 35px;
     background:#0F2027;
     color: #fff;
     font-size: 23px;
     cursor:pointer;
-    border-radius: 28px;
+    border-radius: 25px;
+    transition: 0.5s ;
+}
+button:hover{
+    background: linear-gradient(110deg, #288fac,#2C5364);
+    color: #fff;
+    letter-spacing: 1px;
+    font-weight: 700;
+
 }
 ul li{
     list-style: none;
     font-size: 20px;
-    padding: 15px 10px 15px 50px;
+    padding: 15px 20px 15px 50px;
     user-select: none;
     cursor: pointer;
     position: relative;
+    color: #fff;
 }
 ul li::before{
     content: '';
@@ -73,33 +82,37 @@ ul li::before{
     height: 28px;
     width: 28px;
     border-radius: 50px;
-    background-image: url(unchecked.png);
+    background-image: url(images/unchecked.png);
     background-size: cover;
     background-position: center;
-    top: 15px;
+    top: 12px;
     left: 10px;
 }
 ul li.checked{
     color: #0f0f0f;
     text-decoration: line-through;
+    font-weight: 600;
 }
 ul li.checked::before{
-    background-image: url(checked.png);
+    background-image: url(images/checked.png);
 }
 ul li span{
     position: absolute;
     right: 0;
-    top: 6px;
+    top: 8px;
     width: 35px;
     height: 35px;
     font-size: 25px;
     color: #0f0f0f;
-    line-height: 45px;
+    line-height: 39px;
     text-align: center;
     border-radius: 50%;
 }
 ul li span:hover{
     background: #e43d0a;
+}
+#inputBox::placeholder{
+    color: #fff;
 }
 
 
